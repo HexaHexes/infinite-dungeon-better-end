@@ -36,3 +36,11 @@ treasure, theming).
   dimension's own biome, not the source pack's.
 - No dimension exists until the core gates (#162, #163) land; until then this
   addon compiles and does nothing.
+## Dependency graph
+
+- Disabled for newly created repos under this org, so `.github/workflows/dependency-submission.yml`
+  is deliberately absent: it fails every push with "Dependency graph is disabled" until the
+  org flips the default. Re-add it (copy from neoforge-mod-template) once a
+  dependency-submission run can succeed; `dependency-review.yml` stays and may
+  report the same way at the first PR - non-required until a ruleset says
+  otherwise. (Same remedy the sibling charters record - see undergarden's REPO.md.)
