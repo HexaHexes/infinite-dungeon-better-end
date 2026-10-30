@@ -39,3 +39,11 @@ side = "BOTH"
 # Add your mod's dependencies below. Use type = "optional" for anything the mod
 # works without, and gate the code that touches it (mixins, registrations) so it
 # no-ops when the dependency is absent.
+
+[[dependencies.${mod_id}]]
+modId = "betterend"
+type = "required"
+versionRange = "[21.0.39,)"
+ordering = "AFTER"
+side = "BOTH"
+reason = "This dungeon dimension is the authored Better End blueprint: its biome gate and themed palette are BetterEnd's own (the New Dawn continuation keeps the betterend id and the betterend biome namespace, so the authored gate applies unchanged)."
